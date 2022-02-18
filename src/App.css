@@ -1,0 +1,156 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.message-modal-container{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, .2);
+  backdrop-filter: blur(10px);
+}
+
+.message-modal-container.open{
+  height: 100%;
+  display: block;
+}
+
+.message-modal-container.close{
+  height: 0;
+  display: none;
+}
+
+.message-modal{
+  max-width: 700px;
+  max-height: 100%;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  color: #121212;
+}
+
+.modal-close, .message-send{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-message-container{
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.new-message-container button{
+  display: flex;
+  align-items: center;
+}
+
+.new-message-container button img{
+  margin-left: 5px;
+}
+
+.new-message-btn{
+  height: 45px;
+  font-size: 26px;
+  border-radius: 10px;
+}
+
+input[type='text']{
+  width: 500px;
+  height: 25px;
+}
+
+.email-window-container{
+  display: flex;
+  width: 70%;
+  height: 80%;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding-right: 15px;
+}
+
+.email-window-inner-left{
+  width: 45%;
+  border-right: 1px solid #cccccc;
+}
+
+.email-window-inner-right{
+  width: 55%;
+  padding: 20px 0 10px 20px;
+}
+
+.message{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 0;
+}
+
+.message span{
+  font-size: 20px;
+  color: #cccccc;
+}
+
+.message p{
+  margin-left: 45px;
+  font-size: 24px;
+}
+
+.conversation-container{
+  height: 75%;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+.conversation-container.closed{
+  opacity: 0;
+}
+
+.conversation-container.opened{
+  display: block;
+}
+
+.message-text{
+  width: 75%;
+  margin-top: 10px;
+  resize: none;
+}
+
+.message-form{
+  font-size: 16px;
+}
+
+.message-form input{
+  margin: 5px 0;
+}
+
+.modal-close button{
+  border: none;
+  background: transparent;
+}
+
+.message img{
+  margin: 10px 10px 0 0;
+}
+
